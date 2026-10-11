@@ -1,0 +1,174 @@
+gpu.sh
+ret.sh
+dl.sh
+test_api.py
+test_webshop.py
+
+case/
+external_source/
+past
+**/*.pyc
+**/*.whl
+**/*.pt
+**/checkpoints
+**/wget-log
+**/_build/
+**/*.ckpt
+**/outputs
+**/*.tar.gz
+**/playground
+**/wandb
+
+**/__pycache__/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+dataset/*
+tensorflow/my_graph/*
+.idea/
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+# env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+tmp/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+.venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+
+# Rope project settings
+.ropeproject
+
+# vscode
+.vscode
+
+# Mac
+.DS_Store
+
+# vim
+*.swp
+
+# ckpt
+*.lock
+
+# data
+*.parquet
+examples/data_preprocess/geometry3k/
+
+
+# local logs
+logs
+log
+
+# nohup
+*.out
+outputs
+
+# appworld
+data/
+.tmp
+*ports
+
+# test and analysis caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.nox/
+
+# local experiment outputs
+wandb/
+runs/
+ray_results/
+
+# local process/temp artifacts
+*.err
+*.pid
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# local configuration and outputs of the RSIPO launchers
+.env
+work/
+
+# source directories that data/ and ENV/ above would hide (ENV/ also matches env/ on macOS)
+!scripts/data/
+!agent_system/environments/env_package/alfworld/alfworld/env/
