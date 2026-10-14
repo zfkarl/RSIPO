@@ -1,7 +1,7 @@
 # RSIPO: Recursive Self-Improving Policy Optimization for Agentic Reinforcement Learning via Skill-Policy Co-Evolution
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Paper-Coming%20Soon-lightgrey.svg" alt="Paper: coming soon">
+  <a href="https://arxiv.org/abs/2610.15772"><img src="https://img.shields.io/badge/arXiv-2610.15772-b31b1b.svg" alt="arXiv: 2610.15772"></a>
   <a href="#-checkpoints"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Models-Hugging%20Face-yellow.svg" alt="Models on Hugging Face"></a>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT">
   <img src="https://img.shields.io/badge/Python-3.10-green.svg" alt="Python 3.10">
@@ -15,6 +15,7 @@ teacher.
 
 ## 📰 News
 
+- **[2026.10]** Our paper is available on arXiv [[📄 arXiv](https://arxiv.org/abs/2610.15772)].
 - **[2026.10]** We released the code and the RSIPO checkpoints of Qwen2.5-7B-Instruct, Qwen3-1.7B and
   Qwen2.5-3B-Instruct on ALFWorld and search-based QA [[🤗 Models](#-checkpoints)].
 
@@ -403,7 +404,19 @@ upload it.
 
 ## 📚 Citation
 
-The citation will be added when the paper is public.
+If you find RSIPO useful, please cite our paper:
+
+```bibtex
+@misc{zhang2026rsipo,
+      title={RSIPO: Recursive Self-Improving Policy Optimization for Agentic Reinforcement Learning via Skill-Policy Co-Evolution},
+      author={Fan Zhang and Hao Wu and Jinyang Wu and Hongyu Qu and Zheng Lian and Xiao Luo and Yefeng Zheng and Bo Zhang and Haoxuan Li and Pheng-Ann Heng},
+      year={2026},
+      eprint={2610.15772},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2610.15772},
+}
+```
 
 ## 🙏 Acknowledgement
 
