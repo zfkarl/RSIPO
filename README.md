@@ -15,6 +15,8 @@ teacher.
 
 ## 📰 News
 
+- **[2026.10]** We released the six Stage-1 SFT initialization checkpoints and their exact training/validation data,
+  policy trajectories and GLM-5.2 annotations [[🤗 SFT Data](https://huggingface.co/datasets/Karl28/RSIPO-SFT-Data)].
 - **[2026.10]** Our paper is available on arXiv [[📄 arXiv](https://arxiv.org/abs/2610.15772)].
 - **[2026.10]** We released the code and the RSIPO checkpoints of Qwen2.5-7B-Instruct, Qwen3-1.7B and
   Qwen2.5-3B-Instruct on ALFWorld and search-based QA [[🤗 Models](#-checkpoints)].
@@ -244,6 +246,27 @@ average replay gain. Procedure skills exceed 94% in the last 45 steps, and the r
 </details>
 
 ## 📦 Checkpoints
+
+### Stage-1 SFT artifacts
+
+The exact SFT train/validation splits, base-policy trajectories and GLM-5.2 trajectory-to-summary/skill annotations
+used in the paper are available in
+[`Karl28/RSIPO-SFT-Data`](https://huggingface.co/datasets/Karl28/RSIPO-SFT-Data). The corresponding checkpoints below
+are the Stage-1 initializations loaded before the 150-step RSIPO training:
+
+| Base model | Benchmark | Data config | SFT initialization checkpoint |
+| --- | --- | --- | --- |
+| Qwen2.5-7B-Instruct | ALFWorld | `qwen25-7b-alfworld` | [Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld](https://huggingface.co/Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-ALFWorld) |
+| Qwen2.5-7B-Instruct | Search-based QA | `qwen25-7b-search` | [Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-Search](https://huggingface.co/Karl28/RSIPO-SFT-Qwen2.5-7B-Instruct-Search) |
+| Qwen3-1.7B | ALFWorld | `qwen3-1.7b-alfworld` | [Karl28/RSIPO-SFT-Qwen3-1.7B-ALFWorld](https://huggingface.co/Karl28/RSIPO-SFT-Qwen3-1.7B-ALFWorld) |
+| Qwen3-1.7B | Search-based QA | `qwen3-1.7b-search` | [Karl28/RSIPO-SFT-Qwen3-1.7B-Search](https://huggingface.co/Karl28/RSIPO-SFT-Qwen3-1.7B-Search) |
+| Qwen2.5-3B-Instruct | ALFWorld | `qwen25-3b-alfworld` | [Karl28/RSIPO-SFT-Qwen2.5-3B-Instruct-ALFWorld](https://huggingface.co/Karl28/RSIPO-SFT-Qwen2.5-3B-Instruct-ALFWorld) |
+| Qwen2.5-3B-Instruct | Search-based QA | `qwen25-3b-search` | [Karl28/RSIPO-SFT-Qwen2.5-3B-Instruct-Search](https://huggingface.co/Karl28/RSIPO-SFT-Qwen2.5-3B-Instruct-Search) |
+
+These are the original exported initialization files. Their safetensors are FP32, while their `config.json` files
+retain `torch_dtype: bfloat16`; the model cards document this export detail.
+
+### Final RSIPO policies
 
 The policies reported in Table 1 (Qwen2.5-7B-Instruct and Qwen3-1.7B) and Table 3 (Qwen2.5-3B-Instruct) of the paper,
 after 150 RL steps, in bf16:
